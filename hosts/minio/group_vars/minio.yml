@@ -1,0 +1,30 @@
+---
+# Minio download url
+minio_server_download_url: https://dl.minio.io/server/minio/release/linux-amd64/minio
+
+# systemd unit files location
+systemd_units_dir: /etc/systemd/system
+
+# Minio binaries path
+minio_server_bin: /usr/local/bin/minio
+minio_client_bin: /usr/local/bin/mc
+
+# Runtime user and group for the minio server service
+minio_user: root
+minio_group: root
+
+# Path to the file containing the ENV variables for the minio server
+minio_server_envfile: /etc/default/minio
+
+# Minio server listen address
+minio_server_addr: ":9000"
+
+# Minio server data directories
+minio_server_datadirs: [ /tmp/data/ ]
+
+# Additional minio server CLI options
+minio_server_opts: ""
+
+# Minio access and secret keys
+minio_access_key: "minio"
+minio_secret_key: "minio123"
